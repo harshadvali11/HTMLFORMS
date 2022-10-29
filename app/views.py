@@ -46,6 +46,11 @@ def select_topic(request):
     return render(request,'select_topic.html',d)
 
 
+def checkbox(request):
+    T=Topic.objects.all()
+    d={'topics':T}
+    return render(request,'checkbox.html',d)
+
 
 
 
